@@ -1,6 +1,6 @@
 <?php
 
-function url_for($url_or_params) {
+function url_for($url_or_params = array()) {
 	if (is_array($url_or_params)) {
 		if (isset($url_or_params[0])) {
 			$path = $url_or_params[0];
